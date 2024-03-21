@@ -24,7 +24,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
     try {
       final result = await InternetAddress.lookup('example.com');
       if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
-        fetchWeatherForecast('chennai');
+        fetchWeatherForecast('Bangalore');
       }
     } on SocketException catch (_) {
       performSnackBar();
@@ -172,7 +172,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
 
 
   void fetchWeatherForecast(String location) async {
-    const String apiKey = '5idgcd81leMIIls5VTuNQomwtXIB16Ix';
+    const String apiKey = 'KWMreg4pTcPeYwV28WVKK4tlUXMRkszi';
     final Uri uri = Uri.parse('https://api.tomorrow.io/v4/weather/forecast?location=$location&apikey=$apiKey');
     setState(() {
       noData = false;

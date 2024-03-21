@@ -56,7 +56,7 @@ class _DisplayCountryWeatherState extends State<DisplayCountryWeather> {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Weather Table'),
+          title: const Text('Weather'),
           bottom: const TabBar(
             tabs: [
               Tab(text:'Minutes'),
